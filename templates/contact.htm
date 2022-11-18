@@ -1,0 +1,18 @@
+{% extends 'layout.htm' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<h1>Laissez un message</h1>
+
+<form action="" method="post">
+    <p>{{form.email.label}}{{form.email(size=30)}}</p>
+    <p>{{form.username.label}}{{form.username(size=30)}}</p>
+    <p>{{form.message.label}}{{form.message(rows='10',cols='30')}}</p>
+    <p>{{form.submit}}</p>
+</form>
+
+{% endblock %}
+
+
